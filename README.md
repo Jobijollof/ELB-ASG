@@ -157,8 +157,9 @@ fi
 
 Before we create a load balancer, we are going to do two more things 
 
-1 Create an AMI( we will have our own AMI with the website in it and we can subsequently lanch instances from it) This means that we can create a cluster of instances with the same data.
-2 Create a Launch template
+- Create an AMI( we will have our own AMI with the website in it and we can subsequently lanch instances from it) This means that we can create a cluster of instances with the same  meta data.
+
+- Create a Launch template
 
 ## Set up an AMI
 
@@ -230,6 +231,46 @@ Click on `Instances` - Next - target group name
 
 ![launch](./images/h-6.png)
 
+
+## Create Load balancer
+
+To create a load balancer go to Load balancers
+
+![launch](./images/create-ELB.png)
+
+![launch](./images/create-ELB1.png)
+
+
+![launch](./images/create-ELB2.png)
+
+
+![launch](./images/create-ELB3.png)
+
+Create a new security group for the ELB
+![launch](./images/create-ELB4.png)
+ 
+ click on create security group. Go ack to your tab refresh and the new security group will be there.
+
+![launch](./images/elb-1.png)
+
+![launch](./images/elb-2.png)
+
+
+- Click on Create load balancer
+
+- Click View load balancer( It will go from provisioning to active)
+
+![launch](./images/elb-3.png) 
+
+After this we still will not be able to use our load balancer. We have a small step more
+
+Associate the Security group of the instances with that of the load balancer
+
+![launch](./images/elb-4.png)
+
+Go to target group for health check again
+
+![launch](./images/healthy.png)
 
 
 
