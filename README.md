@@ -1,5 +1,5 @@
 # ELB-ASG
-Teaching Elastic load balancing/ Auto scaling
+Elastic load balancing/ Auto scaling
 
 Launch an EC2 Instance
 
